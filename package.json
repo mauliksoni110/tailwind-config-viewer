@@ -13,7 +13,8 @@
     "lint": "vue-cli-service lint",
     "test": "echo \"No test specified\"",
     "version": "npm run build:docs && git add docs",
-    "prepare": "npm run lint --no-fix && npm run build"
+    "prepare": "npm run lint --no-fix && npm run build",
+    "postinstall": "npm run build"
   },
   "bin": {
     "tailwind-config-viewer": "./cli/index.js",
